@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-header">
+    <div class="app-title">
+      <i class="fa fa-list-check"></i>My To-Do List
+    </div>
+    <div class="user-menu">
+      <button id="user-btn"><i class="fa fa-user"></i> User</button>
+      <button id="sync-btn"><i class="fa fa-refresh"></i> Sync</button>
+    </div>
+  </div>
+  
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search tasks..." id="search-input" autocomplete="off">
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="nav-item active" data-view="myday"><i class="fas fa-sun today-indicator"></i> My Day <span class="count" id="myday-count">0</span></div>
+        <div class="nav-item" data-view="important"><i class="fas fa-star"></i> Important <span class="count" id="important-count">0</span></div>
+        <div class="nav-item" data-view="planned"><i class="fas fa-calendar"></i> Planned <span class="count" id="planned-count">0</span></div>
+        <div class="nav-item" data-view="assigned"><i class="fas fa-user"></i> Assigned to me <span class="count" id="assigned-count">0</span></div>
+        <div class="nav-item" data-view="tasks"><i class="fas fa-home"></i> Tasks <span class="count" id="tasks-count">0</span></div>
+      </div>
+      <div class="lists-section">
+        <div class="lists-header">
+          <span>Lists</span>
+          <button class="add-list-btn" id="add-list-btn"><i class="fa fa-plus"></i></button>
+        </div>
+        <div id="custom-lists"></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-header">
+        <div class="current-date"></div>
+        <div class="page-title" id="page-title">
+          <i class="fas fa-sun today-indicator"></i> My Day
+        </div>
+        <div class="page-subtitle" id="page-subtitle">
+          Focus on your day
+        </div>
+      </div>
+      <div class="content-body">
+        <form id="task-form" class="add-task-section">
+          <div class="task-input-container">
+            <input type="text" id="task-input" class="task-input" placeholder="Add a new task..." autocomplete="off" required>
+            <button type="submit" class="add-task-btn"><i class="fa fa-plus"></i> Add</button>
+          </div>
+          <div class="quick-add-section">
+            <button class="quick-add-btn" data-template="meeting"><i class="fa fa-users"></i> Meeting</button>
+            <button class="quick-add-btn" data-template="call"><i class="fa fa-phone"></i> Call</button>
+            <button class="quick-add-btn" data-template="email"><i class="fa fa-envelope"></i> Email</button>
+            <button class="quick-add-btn" data-template="shopping"><i class="fa fa-shopping-cart"></i> Shopping</button>
+          </div>
+        </form>
+        
+        <div class="task-stats" id="task-stats"></div>
+        <div class="tasks-container" id="tasks-container"></div>
+        <div class="empty-state" id="empty-state" style="display:none;">
+          <i class="fa fa-clipboard-list empty-state-icon"></i>
+          <h3>No Tasks</h3>
+          <p>Your task list is empty. Add your first task!</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>My To-Do List &copy; 2025</p>
+    <p>Developed by Yusuf Khan</p> 
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
