@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CourseCraft - Your gateway to online learning with expert-led courses in various fields. Start learning today with our interactive courses!">
+    <meta name="keywords" content="online courses, e-learning, learn programming, web development, design, business, technology">
+    <meta name="author" content="CourseCraft">
+    <meta property="og:title" content="CourseCraft - Online Learning Platform">
+    <meta property="og:description" content="Learn new skills with our expert-led online courses. Start your learning journey today!">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta property="og:url" content="https://coursecraft.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>CourseCraft – Online Course Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#23A6F0">
+    <meta name="color-scheme" content="light dark">
+<body>
+    <a href="#main-content" class="skip-link" id="skip-link">Skip to main content</a>
+    <div class="page-loading" role="status" aria-live="polite" aria-busy="true">
+        <div class="loading-spinner"></div>
+        <span class="sr-only">Loading...</span>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#" aria-label="CourseCraft Home">
+                    <h1>CourseCraft</h1>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-icon"></span>
+            </button>
+            <nav id="main-nav" class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="login-btn" aria-expanded="false" aria-haspopup="dialog" aria-controls="loginModal" aria-label="Open login form">
+                    <span class="btn-icon" aria-hidden="true">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </span>
+                    <span class="btn-text">Login</span>
+                    <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+                <a href="#pricing" class="join-btn">
+                    <i class="fas fa-user-plus"></i> Join Now
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle" aria-hidden="true" tabindex="-1">
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Close login form" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <div class="modal-header">
+                <h2 id="loginModalTitle" class="modal-title">Welcome Back!</h2>
+                <p class="modal-subtitle">Sign in to access your learning dashboard</p>
+            </div>
+            <form id="loginForm" class="auth-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required aria-required="true">
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <p class="auth-footer">Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <main id="main-content" role="main">
+        <section class="hero-section">
+            <div class="hero-content animate-on-scroll">
+                <div class="welcome-text">Welcome to CourseCraft</div>
+                <h1 class="hero-title">Learn Anytime, Anywhere</h1>
+                <p class="hero-description">Empower your knowledge with our expert-led courses and interactive learning platform. Master new skills to advance your career.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Browse Courses
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Students Enrolled</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Expert Instructors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Learning Hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/800x600" alt="Students learning online" class="hero-img">
+                <div class="floating-badge">
+                    <i class="fas fa-play"></i>
+                    <span>Watch Intro</span>
+                </div>
+            </div>
+        </section>
+
+    <section class="features-section section-padding" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2 class="section-title">Learn Without Limits</h2>
+                <p class="section-description">Start, switch, or advance your career with more than 5,000 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-delay="100">
+                    <div class="card-icon icon-blue">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <div class="card-divider"></div>
+                    <p>Learn from leading industry professionals and certified teachers with real-world experience.</p>
+                    <a href="#instructors" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card card-highlighted animate-on-scroll" data-delay="200">
+                    <div class="card-icon icon-white">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Flexible Learning</h3>
+                    <div class="card-divider"></div>
+                    <p>Self-paced courses available 24/7. Access on any device, anytime and anywhere.</p>
+                    <a href="#how-it-works" class="learn-more">See how it works <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card animate-on-scroll" data-delay="300">
+                    <div class="card-icon icon-orange">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Extensive Catalog</h3>
+                    <div class="card-divider"></div>
+                    <p>Hundreds of courses across technology, business, design, languages, and more.</p>
+                    <a href="#catalog" class="learn-more">Browse catalog <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card animate-on-scroll" data-delay="400">
+                    <div class="card-icon icon-green">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <div class="card-divider"></div>
+                    <p>Earn recognized certificates that you can share with your professional network.</p>
+                    <a href="#certificates" class="learn-more">View certificates <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Popular Courses</span>
+                <h2 class="section-title">Browse Our Top Courses</h2>
+                <div class="course-filters" role="search" aria-label="Course filters">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="tech">Technology</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="language">Languages</button>
+                </div>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <article class="course-card animate-on-scroll tech" data-category="tech" itemscope itemtype="https://schema.org/Course">
+                    <div class="course-badge">Bestseller</div>
+                    <div class="course-image">
+                        <img src="https://via.placeholder.com/400x225" alt="Web Development Course" class="course-img">
+                        <div class="course-overlay">
+                            <a href="#" class="preview-btn" aria-label="Preview Web Development course">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">
+                            <i class="fas fa-laptop-code"></i> Technology
+                        </div>
+                        <h3 class="course-title">Complete Web Development Bootcamp 2024</h3>
+                        <p class="course-description">Master HTML, CSS, JavaScript, React, Node.js, and more with hands-on projects.</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="far fa-clock"></i> 60 hours</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-instructor">
+                                <img src="https://via.placeholder.com/30" alt="Instructor" class="instructor-avatar">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.8
+                                <span class="rating-count">(1,245)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <span class="course-price">$89.99</span>
+                        <button class="btn btn-outline btn-sm add-to-cart" aria-label="Add to cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card animate-on-scroll business" data-category="business">
+                    <div class="course-badge">New</div>
+                    <div class="course-image">
+                        <img src="https://via.placeholder.com/400x225" alt="Business Strategy Course" class="course-img">
+                        <div class="course-overlay">
+                            <a href="#" class="preview-btn" aria-label="Preview Business Strategy course">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">
+                            <i class="fas fa-briefcase"></i> Business
+                        </div>
+                        <h3 class="course-title">Business Strategy & Leadership Masterclass</h3>
+                        <p class="course-description">Learn strategic planning, leadership, and business growth strategies from top executives.</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="far fa-clock"></i> 45 hours</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-instructor">
+                                <img src="https://via.placeholder.com/30" alt="Instructor" class="instructor-avatar">
+                                <span>Jane Smith</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.9
+                                <span class="rating-count">(892)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <span class="course-price">$99.99</span>
+                        <button class="btn btn-outline btn-sm add-to-cart" aria-label="Add to cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card animate-on-scroll design" data-category="design">
+                    <div class="course-image">
+                        <img src="https://via.placeholder.com/400x225" alt="UI/UX Design Course" class="course-img">
+                        <div class="course-overlay">
+                            <a href="#" class="preview-btn" aria-label="Preview UI/UX Design course">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">
+                            <i class="fas fa-paint-brush"></i> Design
+                        </div>
+                        <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                        <p class="course-description">Master the principles of user interface and experience design with real-world projects.</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="far fa-clock"></i> 35 hours</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-instructor">
+                                <img src="https://via.placeholder.com/30" alt="Instructor" class="instructor-avatar">
+                                <span>Alex Johnson</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.7
+                                <span class="rating-count">(1,532)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <span class="course-price">$79.99</span>
+                        <button class="btn btn-outline btn-sm add-to-cart" aria-label="Add to cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card animate-on-scroll language" data-category="language">
+                    <div class="course-badge">Popular</div>
+                    <div class="course-image">
+                        <img src="https://via.placeholder.com/400x225" alt="Spanish Course" class="course-img">
+                        <div class="course-overlay">
+                            <a href="#" class="preview-btn" aria-label="Preview Spanish course">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">
+                            <i class="fas fa-language"></i> Language
+                        </div>
+                        <h3 class="course-title">Spanish for Beginners</h3>
+                        <p class="course-description">Learn Spanish from scratch with our immersive language learning program.</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="far fa-clock"></i> 50 hours</span>
+                            <span class="course-level"><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-instructor">
+                                <img src="https://via.placeholder.com/30" alt="Instructor" class="instructor-avatar">
+                                <span>Maria Garcia</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.9
+                                <span class="rating-count">(2,145)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <span class="course-price">$69.99</span>
+                        <button class="btn btn-outline btn-sm add-to-cart" aria-label="Add to cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline">View All Courses <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Students Say</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The web development course completely transformed my career. The hands-on projects and expert guidance helped me land my dream job within 3 months!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60" alt="Sarah Johnson" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span class="author-title">Frontend Developer at TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I've taken many online courses, but CourseCraft stands out for its quality content and supportive community. The instructors are truly experts in their fields."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60" alt="Michael Chen" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span class="author-title">UX Designer at DesignHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The flexibility to learn at my own pace while working full-time was a game-changer. I've already recommended CourseCraft to all my colleagues!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60" alt="Emily Rodriguez" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <span class="author-title">Marketing Manager at BrandCo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <h3>Ready to start learning?</h3>
+                <p>Join thousands of students already learning with CourseCraft</p>
+                <a href="#pricing" class="btn btn-primary">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">Empowering Learners Worldwide</h2>
+                    <p class="about-text">
+                        CourseCraft is a leading online learning platform dedicated to making high-quality education accessible to everyone, everywhere. 
+                        Since our founding in 2020, we've helped over 100,000 students from 150+ countries achieve their learning goals.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Expert Instructors</h4>
+                                <p>Learn from industry professionals with real-world experience.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Learn Anywhere</h4>
+                                <p>Access courses on any device, at any time that suits you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x500" alt="Students learning online" class="about-img">
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter" class="newsletter-section bg-primary text-white">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest course updates, discounts, and learning resources delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-white">Subscribe</button>
+                    </div>
+                    <div class="form-note">
+                        <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe at any time.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">CourseCraft</a>
+                    <p class="footer-about-text">Empowering learners worldwide with accessible, high-quality education since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Languages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Learning Street, Edutown, 10001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@coursecraft.com">info@coursecraft.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 CourseCraft. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="divider">|</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+    
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+        <span class="theme-icon sun" aria-hidden="true">☀️</span>
+        <span class="theme-icon moon" aria-hidden="true">🌙</span>
+        <span class="sr-only">Toggle dark mode</span>
+    </button>
+    
+    <!-- Loading Indicator Template -->
+    <template id="loading-indicator">
+        <div class="loading-indicator" role="status">
+            <div class="spinner"></div>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
